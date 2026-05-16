@@ -1,0 +1,50 @@
+body {
+    background: #f5f7fb;
+    color: #222;
+}
+
+.auth-panel,
+.form-panel,
+.error-panel {
+    max-width: 720px;
+    background: #fff;
+    border: 1px solid #dde3ec;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 24px rgba(20, 30, 50, 0.06);
+}
+
+.auth-panel {
+    max-width: 430px;
+}
+
+.dashboard-form {
+    background: #fff;
+    border: 1px solid #dde3ec;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.table {
+    background: #fff;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.profile-grid > div {
+    background: #fff;
+    border: 1px solid #dde3ec;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.label {
+    display: block;
+    color: #65758b;
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}

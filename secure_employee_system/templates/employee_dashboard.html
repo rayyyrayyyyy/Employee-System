@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% set title = "Employee Dashboard - Employee Management System" %}
+
+{% block content %}
+<section>
+    <h1 class="h3 mb-3">Employee Dashboard</h1>
+    {% if employee %}
+        <div class="profile-grid">
+            <div>
+                <span class="label">Full Name</span>
+                <strong>{{ employee.full_name }}</strong>
+            </div>
+            <div>
+                <span class="label">Position</span>
+                <strong>{{ employee.position }}</strong>
+            </div>
+            <div>
+                <span class="label">Salary</span>
+                <strong>{{ "%.2f"|format(employee.salary) }}</strong>
+            </div>
+            <div>
+                <span class="label">Account</span>
+                <strong>{{ current_user.username }}</strong>
+            </div>
+        </div>
+    {% else %}
+        <div class="alert alert-info">No employee profile is linked to this account yet.</div>
+    {% endif %}
+</section>
+{% endblock %}
